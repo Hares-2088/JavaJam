@@ -1,0 +1,199 @@
+<!--My name is Adem-->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    
+    <title>Jobs</title>
+    <link href="image/cafe.jpeg" rel="icon" type="image/png">
+    <link rel="stylesheet" href="AllPages.css">
+
+    <style>
+        div{
+            display: flex;
+        }
+        nav{
+            flex:1;
+        }
+        main{
+            flex: 9;
+        }
+        #survey{
+            margin-left: 10%;
+        }
+        label{
+            text-align:right;
+            width: 100%;
+            padding-bottom: 4px;
+        }
+
+        input[type=submit]{
+            margin-left: 50%;
+            margin-top: 5%;
+        }
+        input{
+            border: black solid 1px;
+        }
+
+        .col-label {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        margin-right: 5px;
+        }
+
+        .col-input{
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        }
+
+        .radio-label{
+            text-align: left;
+            width:80px;
+            padding-left: 5px;
+        }
+    </style>
+
+</head>
+<body>
+<header>
+    <a  href="Home.html"><img src="image/javalogo.gif" alt="title"></a>
+</header>
+<div>
+    <nav> 
+            <ul class="noBullet">
+            <li><a href="Home.html">Home</a></li>
+        
+            <li><a href="Menu.html">Menu</a></li>
+        
+                <li>Music</li>
+            <ul class="LnoBullet">    
+                <li><a href="September.html">September</a></li>
+                <li><a href="October.html">October</a></li>
+                <li><a href="November.html">November</a></li>
+            </ul>
+            <li><a href="Jobs.html">Jobs</a></li>
+            <li><a href="Gears.html">Gear</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>Want to work at JavaJam? Fill out the form below to start your application.</p>
+
+        <div class="container">
+        <form name="survey" id="survey" method="get">  
+            
+            <div class="row">
+                <div class="col-label">
+                    <label style="text-align:right; width: 100%;" for="name">Name:</label>
+                </div>
+                <div class="col-input">
+                    <input type="text" name="first" id="name" required>
+                </div>
+            </div>    
+            
+            <div class="row">
+                <div class="col-label">
+                    <label for="email">E-mail:</label>
+                </div>   
+                <div class="col-input">    
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>        
+
+            <div class="row">
+                <div class="col-label">
+                    <label for="telephone">Telephone Number:</label>
+                </div>   
+                <div class="col-input">    
+                    <input type="tel" id="tel" name="telephone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col-label">
+                    <label for="Position">Position:</label>
+                </div>   
+                <div class="col-input">   
+                    <div>    
+                        <select name="Position" id="Position">
+                            <option value="cashier">Cashier</option>
+                            <option value="barista">Barista</option>
+                            <option value="waiter">Waiter</option>
+                            <option value="manager">Manager</option>
+                        </select>
+                    </div>    
+                    <div>
+                        <input type="radio" id="part" name="fav_time" value="part" required>
+                    </div>
+                    <div>    
+                        <label for="part" class="radio-label">Part-Time</label>
+                    </div>    
+                    <div>
+                        <input type="radio" id="full" name="fav_time" value="full" required>
+                    </div>
+                    <div>    
+                        <label for="full" class="radio-label">Full-Time</label>
+                    </div>    
+                </div>
+            </div> 
+            
+            <div class="row">
+                <div class="col-label">
+                    <label for="date">Date of Availability:</label>
+                </div>   
+                <div class="col-input">  
+                    <div>
+                        <input type="date" id="date" name="date" required>
+                    </div>        
+                    <div>
+                        <input type="checkbox" id="am" value="am" style="margin-left:10px;" required>
+                    </div>  
+                    <div>
+                        <label for="am" class="check-label">AM</label>&nbsp;
+                    </div>
+                    <div>
+                        <input type="checkbox" id="pm" value="pm" required>
+                    </div>    
+                    <div>    
+                        <label for="pm" class="check-label">PM</label>
+                    </div>
+                </div>
+            </div>     
+
+            <div class="row">
+                <div class="col-label">
+                    <label for="time">Years of Experience:</label>
+                </div>   
+                <div class="col-input">  
+                    <input type="number" id="time" name="time" style="width:50px; margin-left: 2px;" min="1" required>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col-label">
+                    <label for="Experience">Experience:</label>
+                </div>   
+                <div class="col-input">  
+                    <textarea name="memo" id="memo" required></textarea>
+                </div>
+            </div> 
+
+            <div class="row">
+                    <input type="submit" value="Apply Now">
+            </div>
+        </form>
+        </div>
+    </main>
+</div>
+
+    <footer>
+         &copy; 2022, JavaJam Coffee House<br>
+    
+       <address>
+         <a href="mailto:adembessam@gmail.com" title="send an email"> adembessam@gmail.com</a>
+        </address>
+    </footer>
+</body>
+</html>

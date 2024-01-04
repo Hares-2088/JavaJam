@@ -1,0 +1,100 @@
+<!--My name is Adem-->
+<!DOCTYPE html>
+<html lang="en" >
+    
+<head>
+    <meta charset="utf-8">
+ 
+ <title>Gears</title>
+ <link href="image/cafe.jpeg" rel="icon" type="image/png">
+ <link rel="stylesheet" href="AllPages.css">
+
+ <style>
+    input{
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    aside{
+    padding: 25px;
+    text-align: center;
+    flex:2;
+    background-color: #F1E8B0;
+    }
+ </style>
+<body>
+</head>
+
+    <header>
+        <a  href="Home.html"><img src="image/javalogo.gif" alt="title"></a>
+    </header>
+<div>
+    <nav> 
+        <ul class="noBullet">
+            <li><a href="Home.html">Home</a></li>
+        
+            <li><a href="Menu.html">Menu</a></li>
+        
+            <li>Music</li>
+            <ul class="LnoBullet">    
+                <li><a href="September.html">September</a></li>
+                <li><a href="October.html">October</a></li>
+                <li><a href="November.html">November</a></li>
+            </ul>
+            <li><a href="Jobs.html">Jobs</a></li>
+            <li><a href="Gears.html">Gear</a></li>
+        </ul>
+    </nav>
+
+    <main>
+            <p>JavaJam gear not only looks good, it’s good to your wallet, too.</p>
+            <p>Get a 10% discount when you wear a JavaJam shirt or bring in your JavaJam mug!</p>
+
+            <form name="survey" id="survey" method="get">
+
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="first" id="name" required><br>
+
+                    <label for="color">Color:</label> <br>
+                    <input type="color" name="color" id="color" required><br>
+
+                    <label for="quantity">Quantity:</label><br>
+                    <input type="number" name="quantity" id="quantity" min="1" required><br>
+
+                <fieldset style="width:200px;">
+                    <input type="radio" id="delivered" name="delivery" value="delivered" required>
+                    <label for="delivered" class="radio-label">Delivered</label>
+
+                    <input type="radio" id="pick-up" name="delivery" value="pick-up" required>
+                    <label for="pick-up" class="radio-label">Pick-up</label><br>
+                </fieldset>
+
+                    <label for="address">Address:</label><br>
+                    <input type="text" name="address" id="address" required><br>
+
+                    <label for="date">Date:</label><br>
+                    <input type="date" name="date" id="date" required><br>
+
+                    <input type="reset" value="Reset"><br>
+
+                    <input type="submit" value="Add to cart" style="background-color: #04AA6D;">
+            </form>
+
+    </main>
+
+    <aside>
+        <img src="image/javashirt.jpg" alt="mug" style="margin-top:150px; margin-right:80px; width: 280px; height: 300px;">
+    </aside>
+
+</div>
+    <footer>
+            &copy; 2022, JavaJam Coffee House<br>
+
+        <address>
+            <a href="mailto:adembessam@gmail.com" title="send an email"> adembessam@gmail.com</a>
+        </address>
+    </footer>
+</body>
+</html>
